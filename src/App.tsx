@@ -1,13 +1,15 @@
 import React from 'react';
-import './App.module.css';
+import styles from './App.module.css';
 
-
+import { Cards, CountryPicker, Chart } from './components';
 
 
 function App() {
   return (
-    <div className="App">
-     covid
+    <div className={styles.container}>
+     <Cards />   
+     <CountryPicker />   
+     <Chart />   
     </div>
   );
 }
