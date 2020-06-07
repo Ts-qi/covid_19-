@@ -2,7 +2,7 @@
 
 ## COVID-19 Search
 
-![COVID-19 ](https://i.ibb.co/X87BqVY/Screenshot-2020-04-13-at-10-14-58.png)
+![COVID-19 ](https://raw.githubusercontent.com/Ts-qi/covid_19-/master/src/images/WechatIMG77.png)
 
 创建完整的COVID-19跟实时数据。我们将使用React，Charts.JS和Material UI。
 
