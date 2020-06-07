@@ -9,7 +9,6 @@
 到结束将对React的工作流程和挂钩的使用有深刻的了解
 
 API used: https://covid19.mathdro.id/api;
-In the project directory, you can run:
 
 
 
