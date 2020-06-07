@@ -18,11 +18,7 @@ interface ICardsItemPops {
 
 const Cards :React.FC<ICardsItemPops>= ({confirmed, recovered, deaths,lastUpdate })  => {
 
-        console.log(  confirmed, 
-        recovered, 
-        deaths,  
-        lastUpdate,'data')
-        // const {value } = confirmed as item;
+   
     if(!confirmed ) {
         return   <div>  Loading........ </div> 
     }else {
