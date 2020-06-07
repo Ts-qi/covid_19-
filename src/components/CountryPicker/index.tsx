@@ -3,14 +3,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { NativeSelect, FormControl } from '@material-ui/core';
-
 import { fetchCountries } from '../../api';
-
 import styles from './index.module.css';
-export interface ICountryPickerProps {
-    handleCountryChange:any
-}
 
+export interface ICountryPickerProps {
+    handleCountryChange:(text:string) => void;
+}
 
 const CountryPicker :React.FC<ICountryPickerProps> = ({handleCountryChange}) => {
   const [countries, setCountries] = useState([]);

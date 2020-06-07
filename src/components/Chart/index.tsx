@@ -6,11 +6,8 @@ import { fetchDailyData } from '../../api';
 
 import styles from './index.module.css';
 export interface IChartProps {
-    data:any;
-    country:string ;
-}
-interface IDaliyProps {
-    [key:string]: any
+    data?:any;
+    country?:string ;
 }
 const Chart :React.FC<any> = ({ data: { confirmed, recovered, deaths }, country }) => {
   const [dailyData, setDailyData] = useState({}) 
@@ -23,13 +20,13 @@ const Chart :React.FC<any> = ({ data: { confirmed, recovered, deaths }, country 
     };
 
     fetchMyAPI();
-  }, [dailyData]);
+  }, []);
 
   const barChart = (
     confirmed ? (
       <Bar
         data={{
-          labels: ['Infected', 'Recovered', 'Deaths'],
+          labels: ['感染', '康复', '死亡'],
           datasets: [
             {
               label: 'People',
